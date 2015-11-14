@@ -13,6 +13,7 @@ body {
     background-color: #f4deb5;
     border-bottom: 30px solid #e6e6e6;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .main > .container {
@@ -27,4 +28,13 @@ body {
         .sidebar {
             background-color: transparent;
         }
+    }
+
+    .sidebar h4 {
+        color: #f4deb5;
+        font-weight: bold;
+    }
+
+    .sidebar p {
+        color: white;
     }
