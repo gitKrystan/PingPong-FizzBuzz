@@ -1,7 +1,30 @@
+body {
+    background-color: grey;
+}
+
+    @media (min-width: 992px) {
+        body {
+            background-image: -webkit-linear-gradient(left, green 25%, grey 25%, grey 25%);
+            background-image: linear-gradient(left, green 25%, grey 25%, grey 25%);
+        }
+    }
+
+.jumbotron {
+    background-color: yellow;
+    border-bottom: 30px solid grey;
+    margin-bottom: 0px;
+}
+
 .main {
-    background-color: orangered;
+    background-color: white;
 }
 
 .sidebar {
-    background-color: deeppink;
+    background-color: green;
 }
+
+    @media (min-width: 992) {
+        .sidebar {
+            background-color: transparent;
+        }
+    }
