@@ -9,6 +9,45 @@ body {
         }
     }
 
+.btn-default {
+    color: #333;
+    background-color: #bfbfbf;
+    border-color: #bfbfbf;
+    padding: 10px 16px;
+}
+
+    .btn-default:focus,
+    .btn-default.focus {
+        color: #333;
+        background-color: #bfbfbf;
+        border-color: #bfbfbf;
+    }
+    .btn-default:hover {
+        color: #333;
+        background-color: #bfbfbf;
+        border-color: #bfbfbf;
+    }
+    .btn-default:active,
+    .btn-default.active,
+    .open > .dropdown-toggle.btn-default {
+        color: #333;
+        background-color: #bfbfbf;
+        border-color: #8c8c8c;
+    }
+    .btn-default:active:hover,
+    .btn-default.active:hover,
+    .open > .dropdown-toggle.btn-default:hover,
+    .btn-default:active:focus,
+    .btn-default.active:focus,
+    .open > .dropdown-toggle.btn-default:focus,
+    .btn-default:active.focus,
+    .btn-default.active.focus,
+    .open > .dropdown-toggle.btn-default.focus {
+        color: #333;
+        background-color: #bfbfbf;
+        border-color: #8c8c8c;
+    }
+
 .jumbotron {
     background-color: #f4deb5;
     border-bottom: 30px solid #e6e6e6;
