@@ -2,9 +2,9 @@
  * Created by kmenne on 11/14/15.
  */
 
-var validateInput = function(userNumber) {
-  if (typeof(userNumber) === 'number') {
-    return (userNumber >= 1);
+var validateInput = function(userInput) {
+  if (typeof(userInput) === 'number') {
+    return (userInput >= 1);
   } else {
     return false;
   }
