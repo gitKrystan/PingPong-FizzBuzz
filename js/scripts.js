@@ -12,7 +12,11 @@ var validateInput = function(userInput) {
 
 $(document).ready(function() {
   $('button').click(function() {
-    var userNumber = $('#userNumber').val();
-    $('ul#pingPongList').append('<li>' + userNumber + '</li>');
+    var userNumber = parseInt($('#userNumber').val());
+    if (!validateInput(userNumber)) {
+      alert("Please enter an integer greater than zero.");
+    } else {
+      $('ul#pingPongList').append('<li>' + userNumber + '</li>');
+    }
   });
 });
