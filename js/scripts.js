@@ -37,8 +37,10 @@ $(document).ready(function() {
       alert("Please enter an integer greater than zero.");
     } else {
       var pingPongs = generatePingPongs(userNumber);
+      var pingPongList = $('#pingPongList');
+      pingPongList.empty();
       for (var i = 0; i < pingPongs.length; i++) {
-        $('ul#pingPongList').append('<li>' + pingPongs[i] + '</li>');
+        pingPongList.append('<li>' + pingPongs[i] + '</li>');
       }
     }
   });
