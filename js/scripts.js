@@ -13,6 +13,6 @@ var validateInput = function(userNumber) {
 $(document).ready(function() {
   $('button').click(function() {
     var userNumber = $('#userNumber').val();
-    $('ul#pingPong').append('<li>' + userNumber + '</li>');
+    $('ul#pingPongList').append('<li>' + userNumber + '</li>');
   });
 });
