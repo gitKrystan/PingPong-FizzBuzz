@@ -37,8 +37,9 @@ $(document).ready(function() {
       alert("Please enter an integer greater than zero.");
     } else {
       var pingPongs = generatePingPongs(userNumber);
-      console.log(pingPongs);
-      $('ul#pingPongList').append('<li>' + userNumber + '</li>');
+      for (var i = 0; i < pingPongs.length; i++) {
+        $('ul#pingPongList').append('<li>' + pingPongs[i] + '</li>');
+      }
     }
   });
 });
