@@ -1,8 +1,9 @@
 /**
  * Created by kmenne on 11/14/15.
  */
+
 var validateInput = function(userNumber) {
-  if (typeof(userNumber) === "number") {
+  if (typeof(userNumber) === 'number') {
     return (userNumber >= 1);
   } else {
     return false;
@@ -10,7 +11,8 @@ var validateInput = function(userNumber) {
 };
 
 $(document).ready(function() {
-  $("button").click(function() {
-    $("ul#pingPong").append("<li>Hello world!</li>");
+  $('button').click(function() {
+    var userNumber = $('#userNumber').val();
+    $('ul#pingPong').append('<li>' + userNumber + '</li>');
   });
 });
