@@ -10,12 +10,21 @@ var validateInput = function(userInput) {
   }
 };
 
+var generatePingPongs = function(inputNumber) {
+  var pingPongs = [];
+  for (var i = 1; i <= inputNumber; i++) {
+    pingPongs.push(i);
+  }
+  return pingPongs;
+};
+
 $(document).ready(function() {
   $('button').click(function() {
     var userNumber = parseInt($('#userNumber').val());
     if (!validateInput(userNumber)) {
       alert("Please enter an integer greater than zero.");
     } else {
+      generatePingPongs(userNumber);
       $('ul#pingPongList').append('<li>' + userNumber + '</li>');
     }
   });
