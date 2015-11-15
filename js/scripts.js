@@ -44,5 +44,6 @@ $(document).ready(function() {
         pingPongList.append('<li>' + pingPongs[i] + '</li>');
       }
     }
+    $(this).blur();
   });
 });
