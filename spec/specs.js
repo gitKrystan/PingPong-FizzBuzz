@@ -18,6 +18,10 @@ describe('validateInput', function() {
     it("is true for a number that is equal to 1", function() {
         expect(validateInput(1)).to.equal(true);
     });
+
+    it("is false for a number that not an integer", function() {
+      expect(validateInput(1.5)).to.equal(false);
+    });
 });
 
 describe('pingPongTest', function() {

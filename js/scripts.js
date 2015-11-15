@@ -4,7 +4,7 @@
 
 var validateInput = function(userInput) {
   if (typeof(userInput) === 'number') {
-    return (userInput >= 1);
+    return (userInput >= 1) && (userInput % 1 === 0);
   } else {
     return false;
   }
