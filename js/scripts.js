@@ -25,7 +25,7 @@ var pingPongTest = function(i) {
 var generatePingPongs = function(inputNumber) {
   var pingPongs = [];
   for (var i = 1; i <= inputNumber; i++) {
-    pingPongs.push(i);
+    pingPongs.push(pingPongTest(i));
   }
   return pingPongs;
 };
@@ -36,7 +36,8 @@ $(document).ready(function() {
     if (!validateInput(userNumber)) {
       alert("Please enter an integer greater than zero.");
     } else {
-      generatePingPongs(userNumber);
+      var pingPongs = generatePingPongs(userNumber);
+      console.log(pingPongs);
       $('ul#pingPongList').append('<li>' + userNumber + '</li>');
     }
   });
