@@ -28,7 +28,7 @@ describe('pingPongTest', function() {
         expect(pingPongTest(3)).to.equal("ping");
     });
     it("returns pong for a number that is divisible by 5", function() {
-        expect(pingPongTest(15)).to.equal("pong");
+        expect(pingPongTest(5)).to.equal("pong");
     });
     it("returns the number for a number that is divisible by 3 and 5", function() {
         expect(pingPongTest(2)).to.equal(2);
