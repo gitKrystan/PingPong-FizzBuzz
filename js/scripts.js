@@ -32,7 +32,8 @@ var generatePingPongs = function(inputNumber) {
 
 $(document).ready(function() {
   $('button').click(function() {
-    var userNumber = parseInt($('#userNumber').val());
+    //Convert user's string input into a float
+    var userNumber = parseFloat($('#userNumber').val());
     if (!validateInput(userNumber)) {
       alert("Please enter an integer greater than zero.");
     } else {
